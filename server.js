@@ -16,6 +16,10 @@ let storedData={
     numbers:[]
 };
 
+app.get('/', (req, res) => {
+    res.send('Hey there!');
+});
+
 app.post('/upload-data', (req, res) => {
     const { secretKey, numbers } = req.body;
 
